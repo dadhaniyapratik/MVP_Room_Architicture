@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mvproomarchiticture.ui.common.widgets.fonts.FontTextView
+        android:id="@+id/tvname"
+        android:layout_width="0dp"
+        android:padding="@dimen/_10asdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivFlag"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivFlag"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/_25asdp"
+        android:layerType="software"
+        app:layout_constraintStart_toEndOf="@id/tvname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="@dimen/_25asdp" />
+
+</android.support.constraint.ConstraintLayout>
